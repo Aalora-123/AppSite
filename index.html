@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Application List</title>
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<body>
+  <!-- Logo Top Left -->
+  <div class="position-absolute top-0 start-0 p-0">
+    <img src="NEWLOGO.png" alt="Logo" class="img-fluid" style="max-height: 60px;">
+  </div>
+
+  <!-- Top Contact Bar (stays at top, content shifted right) -->
+  <div class="bg-dark text-white d-flex justify-content-end align-items-center px-4 py-2 small fw-semibold" style="padding-left: 120px;">
+    <span class="ms-4">🔥 Fire - 8018043000</span>
+    <span class="ms-4">🚑 First Aid - 8018043300</span>
+    <span class="ms-4">👮‍♂️ Security - 8018043111</span>
+  </div>
+
+  <!-- Header Section -->
+  <header class="nb text-white text-center py-4 bg-success fw-bold">
+    <h1 class="display-5 fw-bold mb-2">Application List</h1>
+    <h4 class="lead fst-italic mb-4">Explore a variety of applications available for use.</h4>
+
+    <!-- Search Bar -->
+    <div class="search-bar container position-relative w-75">
+      <input type="text" class="form-control pe-5" id="searchInput" placeholder="Search applications..." />
+      <button id="clearSearchBtn" type="button" class="btn position-absolute top-50 end-0 translate-middle-y me-2">
+        &times;
+      </button>
+    </div>
+  </header>
+
+
+  <!-- Website Cards -->
+  <div class="container my-4" id="websitesContainer">
+    <div class="row" id="websitesList">
+      <!-- Cards rendered by JS -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center bg-success text-white py-3 mt-4">
+    <p>&copy; 2025 Website Directory</p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="btn btn-success position-fixed bottom-0 end-0 m-4 fw-bold rounded-circle">
+    🔺
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
